@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#1e1e1e">
+  <title>Tournament - Badminton Tournament Planner</title>
+  
+  <!-- App Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  
+  <!-- Print Styles -->
+  <style media="print">
+    @page {
+      size: portrait;
+      margin: 1cm;
+    }
+    body {
+      background-color: white !important;
+      color: black !important;
+    }
+    .card {
+      border: 1px solid #ddd !important;
+      page-break-inside: avoid;
+    }
+    .footer-nav, .no-print {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h1><i class="bi bi-trophy"></i> Tournament Generator</h1>
+        <p class="text-muted">Generate a balanced tournament schedule for your players.</p>
+      </div>
+    </div>
+    
+    <div id="tournament-status-message">
+      <!-- Status will be displayed here via JavaScript -->
+      <div class="alert alert-info">
+        <div class="spinner-border spinner-border-sm" role="status"></div>
+        Loading player information...
+      </div>
+    </div>
+    
+    <div class="row mb-4 no-print">
+      <div class="col-12">
+        <button id="generate-tournament-btn" class="btn btn-primary">
+          <i class="bi bi-shuffle"></i> Generate New Tournament
+        </button>
+      </div>
+    </div>
+    
+    <div id="alert-container"></div>
+    
+    <div id="tournament-display">
+      <!-- Tournament data will be displayed here -->
+      <div class="text-center py-5">
+        <p class="text-muted">No tournament generated yet. Click the button above to generate a new tournament.</p>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer Navigation -->
+  <footer class="footer-nav">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-4">
+          <a href="index.html" class="d-block">
+            <i class="bi bi-house-door"></i>
+            Home
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="players.html" class="d-block">
+            <i class="bi bi-people"></i>
+            Players
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="tournament.html" class="d-block">
+            <i class="bi bi-trophy"></i>
+            Tournament
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/localdb.js"></script>
+  <script src="js/tournament-generator.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/tournament.js"></script>
+</body>
+</html>

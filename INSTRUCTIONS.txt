@@ -1,0 +1,52 @@
+===== BADMINTON TOURNAMENT PLANNER PWA - INSTALLATION INSTRUCTIONS =====
+
+This is a Progressive Web App (PWA) version of the Badminton Tournament Planner that works offline on iOS devices.
+
+== OPTION 1: INSTALLATION ON IPHONE/IPAD ==
+
+1. Visit the PWA in Safari on your iPhone
+   - You can host these files on any web server or use a service like GitHub Pages
+   - Or, connect to a friend's computer that's hosting these files on a local network
+
+2. Once the page loads, add it to your home screen:
+   - Tap the Share button at the bottom of the screen (square with arrow)
+   - Scroll down and tap "Add to Home Screen"
+   - Tap "Add" in the top-right corner
+
+3. The app will now appear on your home screen like a native app
+   - It will work completely offline
+   - Your player data is stored on your device
+
+== OPTION 2: USING DIRECTLY IN SAFARI ==
+
+If you prefer not to install as a PWA:
+
+1. Open the files in Safari on your iPhone
+2. The app will work in the browser
+3. You can bookmark the page for easy access
+4. The app will still work offline once it's been loaded
+
+== DATA STORAGE ==
+
+All player and tournament data is stored in your device's local storage.
+- This means it stays on your device
+- No internet connection is required
+- No data is sent to any server
+
+== TROUBLESHOOTING ==
+
+- If the app is not working after installation, try:
+  1. Refreshing the page
+  2. Clearing Safari data: Settings > Safari > Clear History and Website Data
+  3. Reinstalling the app
+
+- If the "Add to Home Screen" option doesn't appear:
+  Make sure you're using Safari (not Chrome or another browser)
+
+== FEATURES ==
+
+- Add up to 40 players with skill rankings
+- Mark players as available/unavailable for tournaments
+- Generate balanced 8-round tournaments
+- Print or share tournament schedules
+- Works completely offline
